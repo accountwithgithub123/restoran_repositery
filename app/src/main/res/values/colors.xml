@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3F497F</color>
+    <color name="mid">#EAB76D</color>
+    <color name="ligh_pink">#FFE4E2</color>
+    <color name="yello">#FEF07C</color>
+    <color name="mid2">#8F97C4</color>
+    <color name="yello2">#FFC107</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="lightblue">#6BBDFF</color>
+    <color name="ligthPurple">#BD83FF</color>
+
+</resources>

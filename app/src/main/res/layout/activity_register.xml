@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradiant"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/txtStyle"
+            android:text="Create Account"
+            android:paddingTop="30dp"
+            android:textSize="30sp" />
+        <TextView
+            style="@style/txtStyle"
+            android:text="to get started now!"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            style="@style/txtStyle"
+            android:text="Select gender:"
+            android:layout_gravity="start"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rdgroup"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/white"
+                android:id="@+id/rbtnmale"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Female"
+                android:id="@+id/rbtnfemale"/>
+        </RadioGroup>
+        <TextView
+            style="@style/txtStyle"
+            android:text="Select country:"
+            android:layout_gravity="start"/>
+        <Spinner
+            android:id="@+id/cntry"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/dropdown"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nbrPicker"
+            android:visibility="gone"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/white"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@null"
+                android:hint="User Name"
+                android:textColorHint="@color/gray"
+                android:inputType="textPersonName"
+                android:id="@+id/etusrName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/white"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@null"
+                android:hint="Email Address"
+                android:textColorHint="@color/gray"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etemail"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/white"
+            app:endIconMode="password_toggle"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@null"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray"
+                android:id="@+id/etpass"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/white"
+            app:endIconMode="password_toggle"
+            android:padding="5dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@null"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray"
+                android:id="@+id/etconfirmpass"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            style="@style/btnStyle1"
+            android:text="Sign Up"
+            android:layout_marginTop="30dp"
+            android:id="@+id/regbtn"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <view
+                style="@style/viewStyle"
+                android:layout_height=".5dp"
+                android:background="@color/gray"
+                class="android.widget.LinearLayout"/>
+            <TextView
+                android:layout_height="wrap_content"
+                style="@style/viewStyle"
+                android:textColor="@color/white"
+                android:text="or Sign Up with"
+                />
+            <view
+                style="@style/viewStyle"
+                android:layout_height=".5dp"
+                android:background="@color/gray" class="android.widget.LinearLayout"/>
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btngoogle"
+            style="@style/imgbtn"
+            android:contentDescription="TODO"
+            android:text="Google"
+            android:drawableLeft="@drawable/google" />
+        <Button
+            style="@style/imgbtn"
+            android:drawableLeft="@drawable/facebook"
+            android:id="@+id/btnface"
+            android:text="Facebook"
+            android:contentDescription="TODO" />
+
+
+        <TextView
+            style="@style/txtStyle"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:id="@+id/tvalrAcc"
+            android:text="Already have an account?"/>
+
+    </LinearLayout>
+
+</ScrollView>

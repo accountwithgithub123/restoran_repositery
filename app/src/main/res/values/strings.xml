@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MayBeQuiz</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="dropdown">
+        <item>Pakistan</item>
+        <item>India</item>
+        <item>Afghanistan</item>
+    </string-array>
+</resources>
